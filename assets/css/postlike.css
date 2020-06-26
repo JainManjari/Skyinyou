@@ -74,19 +74,19 @@
           justify-content: center;
           align-items: center;
           font-family: 'Pacifico', cursive;
-          color: mistyrose; }
+          color: mistyrose !important; }
           .post-like-box .post-like-username-list li a .concealed-image > span {
             color: mistyrose !important; }
           .post-like-box .post-like-username-list li a .concealed-image > span:hover {
             font-weight: normal;
             color: mistyrose !important; }
         .post-like-box .post-like-username-list li a span {
-          font-variant: small-caps;
-          align-self: center;
-          color: #88a1a7;
-          text-align: left; }
+          font-variant: small-caps !important;
+          align-self: center !important;
+          color: #88a1a7 !important;
+          text-align: left !important; }
         .post-like-box .post-like-username-list li a span:hover {
-          font-weight: bold;
+          font-weight: bold !important;
           color: #88a1a7 !important; }
         .post-like-box .post-like-username-list li a img:hover, .post-like-box .post-like-username-list li a .concealed-image:hover {
           filter: brightness(0.8); }
