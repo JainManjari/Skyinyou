@@ -1602,6 +1602,7 @@
 ::1 - - [19/Jun/2020:04:19:52 +0000] "GET /users/profile/5eeb52a8dbaff438d8daab4f HTTP/1.1" 200 42295 "http://localhost:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
 ::1 - - [19/Jun/2020:04:19:56 +0000] "GET /uploads/users/avatars/avatar-1592537353163 HTTP/1.1" 404 181 "http://localhost:8000/users/profile/5eeb52a8dbaff438d8daab4f" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.106 Safari/537.36"
 ::1 - - [26/Jun/2020:07:50:09 +0000] "GET / HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+<<<<<<< HEAD
 ::ffff:127.0.0.1 - - [26/Jun/2020:07:55:28 +0000] "GET / HTTP/1.1" 304 - "http://skyinyou.com/users/profile/5ef0d93e25b3c86bb07131f2" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 ::ffff:127.0.0.1 - - [26/Jun/2020:07:55:31 +0000] "GET /uploads/users/avatars/avatar-1592843016110 HTTP/1.1" 404 181 "http://skyinyou.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 ::ffff:127.0.0.1 - - [26/Jun/2020:07:55:31 +0000] "GET /uploads/users/avatars/avatar-1592827554744 HTTP/1.1" 404 181 "http://skyinyou.com/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
@@ -1727,3 +1728,6 @@
 ::ffff:127.0.0.1 - - [26/Jun/2020:10:03:51 +0000] "GET /users/profile/5eeb5251dbaff438d8daab4d HTTP/1.1" 200 34346 "http://skyinyou.com/users/profile/5eec3653ca9e201624684e41" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 ::ffff:127.0.0.1 - - [26/Jun/2020:10:04:29 +0000] "GET /users/profile/5eeb5251dbaff438d8daab4d HTTP/1.1" 200 34075 "http://skyinyou.com/users/profile/5eec3653ca9e201624684e41" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
 ::ffff:127.0.0.1 - - [26/Jun/2020:10:04:29 +0000] "GET /users/make-friends/?from=5eeb5251dbaff438d8daab4d HTTP/1.1" - - "http://skyinyou.com/users/profile/5eeb5251dbaff438d8daab4d" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+=======
+::1 - - [26/Jun/2020:10:11:05 +0000] "GET / HTTP/1.1" - - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.116 Safari/537.36"
+>>>>>>> 033fabc7e7e0721ac99db1ce1e0329278ee34e57
