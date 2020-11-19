@@ -66,9 +66,9 @@ const production={
             stream:accesslogStream
         }
     },
-    mongodb_username=process.env.SKYINYOU_MONGODB_USERNAME,
-    mongodb_pwd=process.env.SKYINYOU_MONGODB_PWD,
-    mongodb_url=process.env.SKYINYOU_MONGODB_URL,
+    mongodb_username:process.env.SKYINYOU_MONGODB_USERNAME,
+    mongodb_pwd:process.env.SKYINYOU_MONGODB_PWD,
+    mongodb_url:process.env.SKYINYOU_MONGODB_URL,
 }
 
 module.exports=eval(process.env.SKYINYOU_ENVIRONMENT)==undefined ? development : eval(process.env.SKYINYOU_ENVIRONMENT);
