@@ -4,9 +4,8 @@ const env=require("./environment");
 //mongoose.connect(`mongodb://localhost/${env.db}`);
 
 //this is for mongo db atlas
-const URL = `mongodb+srv://Manjari:2216Manjari%23@cluster1.rqggs.mongodb.net/${env.db}?retryWrites=true&w=majority`
+const URL = `${env.mongodb_url}`
 
-//mongodb+srv://Manjari:2216Manjari%23@cluster0.rqggs.mongodb.net/${env.db}?retryWrites=true&w=majority
 mongoose.connect(URL,{
     useUnifiedTopology:true,
     useNewUrlParser:true
