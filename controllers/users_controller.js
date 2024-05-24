@@ -193,6 +193,7 @@ module.exports.updateProfile = async function (req, res) {
                 if (err) {
                     console.log("****Multer ", err);
                 }
+                console.log("update profile ",JSON.stringify(req.body), JSON.stringify(req.params));
                 //console.log("body",req.body)
                 user.name = req.body.name;
                 let personalInfo={
@@ -1243,6 +1244,7 @@ module.exports.verifyAccount=async function(req,res)
 module.exports.addWorkGrad=async function(req,res)
 {
     try{
+        console.log("add work grad ", JSON.stringify(req.body));
         let date=new Date()
         let year=date.getFullYear();
         let month=date.getMonth()
@@ -1424,6 +1426,7 @@ module.exports.updateWorkGradModal=async function(req,res)
 module.exports.updateWorkGrad=async function(req,res)
 {
     try{
+        console.log("update work grad ", JSON.stringify(req.body));
         let id=req.body.id;
         let object;
         if(req.body.type=="work")

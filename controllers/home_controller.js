@@ -64,7 +64,7 @@ module.exports.home = async function(req, res){
       // console.log(postLists.comments);
      
         let users=await User.find({});
-       // console.log(users);
+       console.log("timeline ",JSON.stringify(postLists));
         return res.render('home', {
                         title: "Skyinyou",
                         posts:postLists,

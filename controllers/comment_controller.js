@@ -13,6 +13,7 @@ module.exports.createComment=async function(req,res)
 {
     try
     {
+        console.log("create comment ", JSON.stringify(req.body));
         let post=await Post.findById(req.body.post);
         if(post)
         {
@@ -88,6 +89,17 @@ module.exports.createComment=async function(req,res)
     
                 });
            }
+           const data  = {
+            data:
+            {
+                comment:newcomment,
+                post:post,
+                length:length,
+                notyOriginalUser:origianlUser
+            },
+            message:"Comment published!"
+        };
+        console.log("created comment ", JSON.stringify(data));
             if(req.xhr)
             {
                 return res.status(200).json({
