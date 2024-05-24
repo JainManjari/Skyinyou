@@ -1,6 +1,20 @@
 # Skyinyou - Social Media Website
 A clone of social media websites like Instagram, Facebook or Twitter.
+<br/>
+<br/>
 
+## Topics
+1. [Functional Requirements](#functional-requirements).
+2. [Tech Stack Overview](#tech-stack-overview).
+3. [Entities](#entities).
+4. [High Level of API Designs](#high-level-of-api-designs).
+5. [Current Architecture](#current-architecture).
+6. [Screenshots](#screenshots).
+7. [Email Notifications Screenshots](#email-notifications-screenshots).
+8. [Installation](#installation).
+9. [To start the project](#to-start-the-project).
+<br/>
+<br/>
 
 ### Functional Requirements
 1. Creating new users
@@ -18,6 +32,8 @@ adding contact info etc.,.
 12. Searching a user through its name. 
 13. Assigning a time-alloted session cookie to each logged-in user.
 14. Changing email or setting up a new password is also possible. 
+<br/>
+<br/>
 
 
 ### Tech Stack Overview
@@ -26,6 +42,9 @@ adding contact info etc.,.
 3. It uses redis-server & nodemailer for sending out email notifications.
 4. It uses google-oauth-2 for signing in through google.
 5. It uses Mongodb as the database.
+<br/>
+<br/>
+
 
 
 ### Entities
@@ -82,7 +101,8 @@ adding contact info etc.,.
 ```json
 {"_id":{"$oid":"66506719df37f61defeb59c4"},"isFormSent":true,"fromUser":{"$oid":"6650658edf37f61defeb5732"},"toUser":{"$oid":"665062ddf1e87c149272880b"},"createdAt":{"$date":{"$numberLong":"1716545305706"}},"updatedAt":{"$date":{"$numberLong":"1716545305706"}},"__v":{"$numberInt":"0"}}
 ```
-<br>
+<br/>
+<br/>
 
 
 ### High Level of API Designs
@@ -495,13 +515,15 @@ HEADER 'Content-Type: application/json'
 RESPONSE
 `{"profileUser":{"friendships":[],"works":[],"grads":[{"_id":"665076fd0078c74bcca8d201","grade":"Bachelor","school":"Delhi University","descrpt":"","fromMonth":"07","fromYear":"2014","toMonth":"06","toYear":"2017","user":"66506976df37f61defeb5d46","createdAt":"2024-05-24T11:16:13.463Z","updatedAt":"2024-05-24T11:17:24.074Z","__v":0}],"noties":[],"pendFR":[],"_id":"66506976df37f61defeb5d46","name":"Hershley","email":"hershley@gmail.com","gender":"female","password":"123345678M#","info":{"about":"Hi, I am Hershley. Nice to meet you!!","personalInfo":{"currentCity":"Hogwarts","homeTown":"Uk","bDay":""},"socialInfo":{"fb":"","linkedin":"https://www.linkedin.com/in/manjarijain","quora":"","insta":"","utube":"","twitter":""},"contactInfo":{"phone":"8753426612","website":"https://jainmanjari.github.io/"},"bgColor":"#E91E63"},"prevNotyOpen":false,"oldNotyLength":0,"prevPendFROpen":false,"oldPendFRLength":0,"createdAt":"2024-05-24T10:18:30.691Z","updatedAt":"2024-05-24T11:16:13.795Z","__v":1},"posts":[{"comments":[],"likes":[],"shares":[],"_id":"66507b28233cd35b263ae51b","content":{"prevAuthName":"Manjari Jain","prevAuthID":"665062ddf1e87c149272880b","prevAuthBgColor":"#FB8C00","prevAuthContent":"Hello world","prevPostId":"665062fcf1e87c1492728819","newContent":"Sharing is carringgg!!!!","prevPostShares":2},"user":{"friendships":[],"works":[],"grads":["665076fd0078c74bcca8d201"],"noties":[],"pendFR":[],"_id":"66506976df37f61defeb5d46","name":"Hershley","email":"hershley@gmail.com","gender":"female","password":"123345678M#","info":{"about":"Hi, I am Hershley. Nice to meet you!!","personalInfo":{"currentCity":"Hogwarts","homeTown":"Uk","bDay":""},"socialInfo":{"fb":"","linkedin":"https://www.linkedin.com/in/manjarijain","quora":"","insta":"","utube":"","twitter":""},"contactInfo":{"phone":"8753426612","website":"https://jainmanjari.github.io/"},"bgColor":"#E91E63"},"prevNotyOpen":false,"oldNotyLength":0,"prevPendFROpen":false,"oldPendFRLength":0,"createdAt":"2024-05-24T10:18:30.691Z","updatedAt":"2024-05-24T11:16:13.795Z","__v":1},"update":false,"sharedFromPost":true,"edited":false,"likesLength":0,"createdAt":"2024-05-24T11:34:00.603Z","updatedAt":"2024-05-24T11:34:00.603Z","__v":0}],"friends":[],"mutualfriends":[],"friended":false,"pendingFrom":false,"pendingTo":false,"works":[],"grads":[{"_id":"665076fd0078c74bcca8d201","grade":"Bachelor","school":"Delhi University","descrpt":"","fromMonth":"07","fromYear":"2014","toMonth":"06","toYear":"2017","user":"66506976df37f61defeb5d46","createdAt":"2024-05-24T11:16:13.463Z","updatedAt":"2024-05-24T11:17:24.074Z","__v":0}],"birthday":"undefined Date ,undefined"}`
 ```
-<br>
+<br/>
+<br/>
 
 
 
 ### Current Architecture
 <img width="1462" alt="currentarch" src="https://github.com/JainManjari/Skyinyou/assets/54873596/88966e03-4400-44ab-9449-9f109d0c4012">
-
+<br/>
+<br/>
 
 ### Screenshots 
 
@@ -609,7 +631,7 @@ RESPONSE
 
 
 
-## Email Notifications
+## Email Notifications Screenshots
 
 1) Email for new comment added on the user's post
    <br/>
@@ -691,11 +713,10 @@ npm install -g nodemon
 npm install
 ```
 
-<br>
+<br/>
+<br/>
 
 ## To start the project
-
-<br>
 
 
 - Open one terminal
@@ -715,5 +736,7 @@ npm start
 npm run prod_start
 ```
 3) Open http://localhost:8000 in any browser
+<br/>
+<br/>
 
-
+## For further assistance please reach me @ manjarijain98@gmail.com
