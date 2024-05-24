@@ -13,6 +13,7 @@ module.exports.createComment=async function(req,res)
 {
     try
     {
+        console.log("create comment ", JSON.stringify(req.body));
         let post=await Post.findById(req.body.post);
         if(post)
         {
@@ -88,6 +89,17 @@ module.exports.createComment=async function(req,res)
     
                 });
            }
+           const data  = {
+            data:
+            {
+                comment:newcomment,
+                post:post,
+                length:length,
+                notyOriginalUser:origianlUser
+            },
+            message:"Comment published!"
+        };
+        console.log("created comment ", JSON.stringify(data));
             if(req.xhr)
             {
                 return res.status(200).json({
@@ -137,6 +149,17 @@ module.exports.destroyComment=async function(req,res)
             post.save();
             //CHANGE:: delete the likes of the comments
             await Like.deleteMany({likeable:comment._id,onModel:"Comment"});
+
+            const data = {
+                data:
+                {
+                    comment_id:req.params.id,
+                    postID:postId
+                },
+                message:"Comment deleted"
+            }
+
+            console.log("deleted comment ", JSON.stringify(data));
             
             if(req.xhr)
             {
@@ -208,6 +231,7 @@ module.exports.updateComment2=async function(req,res)
 {
     try
     {
+        console.log("updating a comment ", JSON.stringify(req.body));
         let id=req.body.comment;
         let comment=await Comment.findById(id);
         if(comment.user.id==req.user.id)
@@ -219,6 +243,19 @@ module.exports.updateComment2=async function(req,res)
             }
             comment.update=false;
             comment.save();
+
+            const data = {
+                data:
+                    {
+                        commentID:id,
+                        content:req.body.content,
+                        edited:comment.edited,
+                        postID:comment.post
+                    },
+                    message:"Comment Updated Successfully"
+            }
+
+            console.log("updated comment ", JSON.stringify(data));
            
             return res.json(200,{
                     data:
@@ -283,6 +320,7 @@ module.exports.showReply=async function(req,res)
         comment.save();
         let post=await Post.findById(comment.post);
         post.populate("user");
+        console.log("show comment reply ", JSON.stringify(comment));
         return res.render("replyCommentContent",{
             title:"Skyinyou | Comment Replies",
             comment:comment,
@@ -300,6 +338,7 @@ module.exports.showReply=async function(req,res)
 module.exports.createReply=async function(req,res)
 {
     try{
+        console.log("creating reply ", JSON.stringify(req.body));
         let comment=await Comment.findById(req.body.comment);
         let post=await Post.findById(comment.post);
         if(comment)
@@ -475,7 +514,7 @@ module.exports.updateReply2=async function(req,res)
 {
     try
     {
-       // console.log(req.body);
+        console.log(req.body);
         let id=req.body.reply;
         let reply=await commentReply.findById(id);
         if(reply.user.id==req.user.id)
@@ -588,6 +627,8 @@ module.exports.replyReply1=async function(req,res)
 module.exports.replyReply2=async function(req,res)
 {
     try{
+
+        console.log("creating reply on a comment reply", JSON.stringify(req.body));
 
         let comment=await Comment.findById(req.body.comment);
         let reply=await commentReply.findById(req.body.reply);

@@ -159,6 +159,21 @@ module.exports.profile = async function (req, res) {
             let dateArr=date.split(" ");
             birthday=dateArr[2]+" "+dateArr[1]+" ,"+dateArr[3];
         }
+        const data = {
+            profileUser: user,
+            posts:postLists,
+            friends:friends,
+            mutualfriends:mutualfriends,
+            friended:friended,
+            pendingFrom:pendingFrom,
+            pendingTo:pendingTo,
+            works:works,
+            grads:grads,
+            birthday:birthday 
+        }
+
+        console.log("output of profile ", JSON.stringify(data));
+        
         return res.render('userProfile', {
             title: `${user.name} | Skyinyou`,
             profileUser: user,
@@ -193,6 +208,7 @@ module.exports.updateProfile = async function (req, res) {
                 if (err) {
                     console.log("****Multer ", err);
                 }
+                console.log("update profile ",JSON.stringify(req.body), JSON.stringify(req.params));
                 //console.log("body",req.body)
                 user.name = req.body.name;
                 let personalInfo={
@@ -913,6 +929,7 @@ module.exports.resetPassword=async function(req,res)
 module.exports.sendFriendshipForms=async function(req,res)
 {
     try{
+        console.log("send friendship form ", JSON.stringify(req.query));
         if(req.user.id!=req.query.to)
         {
             let form=await FriendshipForm.create({
@@ -1038,7 +1055,7 @@ module.exports.destroyFriendshipFormsTo=async function(req,res)
 module.exports.makeFriendShip=async function(req,res)
 {
     try{
-        //console.log(req.query);
+        console.log("accept friend request ",req.query);
         let form=await FriendshipForm.findOneAndDelete({fromUser:req.query.from,toUser:req.user._id});
         if(!form)
         {
@@ -1129,7 +1146,7 @@ module.exports.destroyFriendship=async function(req,res)
 {
     try
     {
-        //console.log(req.query);
+        console.log(req.query);
         let existingFriendshipFrom=await Friendship.findOne({
             fromUser:req.user._id,
             toUser:req.query.to
@@ -1243,6 +1260,7 @@ module.exports.verifyAccount=async function(req,res)
 module.exports.addWorkGrad=async function(req,res)
 {
     try{
+        console.log("add work grad ", JSON.stringify(req.body));
         let date=new Date()
         let year=date.getFullYear();
         let month=date.getMonth()
@@ -1424,6 +1442,7 @@ module.exports.updateWorkGradModal=async function(req,res)
 module.exports.updateWorkGrad=async function(req,res)
 {
     try{
+        console.log("update work grad ", JSON.stringify(req.body));
         let id=req.body.id;
         let object;
         if(req.body.type=="work")

@@ -69,6 +69,7 @@ module.exports.createPost= async function(req,res)
 {
     try
     {
+        console.log("creating first post ", JSON.stringify(req.body));
          let post =await Post.create({
                 content:req.body.content,
                 user:req.user._id,
@@ -255,6 +256,7 @@ module.exports.updatePost2=async function(req,res)
 {
     try
     {
+        console.log("update post", JSON.stringify(req.body));
         let id=req.body.post;
         let post=await Post.findById(id);
         if(post.user==req.user.id)
@@ -315,8 +317,8 @@ module.exports.sharePost=async function(req,res)
 {
     try{
 
-        // console.log("share controller called");
-        // console.log(req.body);
+        console.log("share controller called");
+        console.log(req.body);
         if(req.body.content=="")
         {
             return res.json(200,{
