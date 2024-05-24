@@ -500,37 +500,220 @@ RESPONSE
 
 
 ### Current Architecture
-<img width="861" alt="Screenshot 2024-05-12 at 10 15 34 AM" src="https://github.com/JainManjari/GameScheduler/assets/54873596/0d4f0c44-a3e4-47a2-8419-4a5039dc9304">
-
+<img width="1462" alt="currentarch" src="https://github.com/JainManjari/Skyinyou/assets/54873596/88966e03-4400-44ab-9449-9f109d0c4012">
 
 
 ### Screenshots 
 
-1. Create a player
-<img width="624" alt="Screenshot 2024-05-12 at 10 55 06 AM" src="https://github.com/JainManjari/GameScheduler/assets/54873596/dad4dbff-7b2e-4b23-9c8c-acc8461a3abc">
+1. Home Page
+<img width="1783" alt="homeandlogin" src="https://github.com/JainManjari/Skyinyou/assets/54873596/64f88ca6-3da6-40ce-945e-2b540df599d5">
 <br/>
-<br/>
-2. Create a game
-<img width="1080" alt="Screenshot 2024-05-12 at 10 57 06 AM" src="https://github.com/JainManjari/GameScheduler/assets/54873596/92557d92-61fc-4fe1-83d0-97e20cdf8883">
-<br/>
-<br/>
-3. Scheduler running in the background
-<br/>
-<img width="717" alt="Screenshot 2024-05-12 at 10 57 31 AM" src="https://github.com/JainManjari/GameScheduler/assets/54873596/da1e2a0c-cba5-45ee-96c5-65edec5200f3">
-<br/>
-<br/>
-<img width="756" alt="Screenshot 2024-05-12 at 10 59 10 AM" src="https://github.com/JainManjari/GameScheduler/assets/54873596/c38f011e-4c64-407c-8ccb-df314b8243a8">
-<br/>
-<br/>
-4. Displaying the top 5 players on UI
-<br/>
-<img width="880" alt="Screenshot 2024-05-12 at 11 00 01 AM" src="https://github.com/JainManjari/GameScheduler/assets/54873596/17bbc595-7a6e-4d79-b904-9553aa3de375">
 <br/>
 
 
-## Running project
+2. Sign Up
+<img width="1791" alt="signup" src="https://github.com/JainManjari/Skyinyou/assets/54873596/dc5f6430-dad6-4c5d-a529-5afbc7a14874">
+<br/>
+<br/>
 
-1. git clone https://github.com/JainManjari/GameScheduler.git
-2. npm install
-3. npm start
-4. Open browser and go to http://localhost:8000
+
+3. Timeline and searching
+<img width="1762" alt="timelineandsearching" src="https://github.com/JainManjari/Skyinyou/assets/54873596/4a3dac8b-9150-40f3-892c-3cf3a7ba3da2">
+<br/>
+<br/>
+
+
+4. Comment Reply View
+<img width="1791" alt="commentreplyview" src="https://github.com/JainManjari/Skyinyou/assets/54873596/df140f2d-bf1b-4c68-92fc-f7ddf105fc93">
+<br/>
+<br/>  
+
+
+5. View all friend requests
+<img width="1791" alt="friendrequestlists" src="https://github.com/JainManjari/Skyinyou/assets/54873596/386aab93-4923-4369-9bca-737524483c9e">
+<br/>
+<br/>
+
+
+
+6. View an user's profile with notifications
+<img width="1789" alt="viewuserprofilewithnoties" src="https://github.com/JainManjari/Skyinyou/assets/54873596/e4dd5e0a-5d16-44bf-865e-ccde98d5125b">
+<br/>
+<br/>
+
+
+7. Update own's profile
+<img width="1506" alt="updateuserprofileform" src="https://github.com/JainManjari/Skyinyou/assets/54873596/796bd1eb-6ab9-463c-91c5-6454b1ac8dbf">
+<br/>
+<br/>
+
+
+8. Add work experience to the profile
+<img width="1371" alt="addworkexpform" src="https://github.com/JainManjari/Skyinyou/assets/54873596/90e7382b-9507-4ca3-9c5a-eed9596ee882">
+<br/>
+<br/>
+
+
+9. View an user's work history
+<img width="1572" alt="viewworkexphistory" src="https://github.com/JainManjari/Skyinyou/assets/54873596/5570df5b-9178-4fdb-b3cc-4f9a7283ffcb">
+<br/>
+<br/>
+
+
+10. View an user's graduation history
+<img width="1764" alt="viewgraduationhistory" src="https://github.com/JainManjari/Skyinyou/assets/54873596/3096d8a7-70cf-48a9-ac04-2fc30c42ab03">
+<br/>
+<br/>
+
+
+11. View all friends of an user
+<img width="1604" alt="viewallfriendshipsofanuser" src="https://github.com/JainManjari/Skyinyou/assets/54873596/84c93cc8-0137-46fc-8f4d-ad8ce3d79dd7">
+<br/>
+<br/>
+
+
+12. Remove a friend of an user
+<img width="1361" alt="removefriend" src="https://github.com/JainManjari/Skyinyou/assets/54873596/e999b75e-bd80-44b9-a1b5-8bd3c7e2bb3d">
+<br/>
+<br/>
+
+
+13. Editing a post
+<img width="1378" alt="editingpost" src="https://github.com/JainManjari/Skyinyou/assets/54873596/1b6cb19a-084e-4bdf-8240-0087851765a2">
+<br/>
+<br/>
+
+
+14. Deleting a post
+<img width="1546" alt="deletingpost" src="https://github.com/JainManjari/Skyinyou/assets/54873596/6bac7ba8-3415-46d9-8d18-f40402545c11">
+<br/>
+<br/>
+
+15. Sharing a post
+<img width="1593" alt="Screenshot 2024-05-24 at 7 30 20 PM" src="https://github.com/JainManjari/Skyinyou/assets/54873596/c4f946eb-b4d6-4daa-9dbe-1b2d4894b7c0">
+<br/>
+<br/>
+
+
+16. View all post's reactions
+<img width="1343" alt="Screenshot 2024-05-24 at 7 30 43 PM" src="https://github.com/JainManjari/Skyinyou/assets/54873596/c9781d60-c98d-4794-96fe-0175765b5f13">
+<br/>
+<br/>
+
+
+<h3>And much more.....</h3>
+<br/>
+<br/>
+
+
+
+
+
+## Email Notifications
+
+1) Email for new comment added on the user's post
+   <br/>
+   <br/>
+   <img width="847" alt="emailforaddingnewcomment" src="https://github.com/JainManjari/Skyinyou/assets/54873596/95f342ef-653e-4630-91c2-e50ef02719e3">
+   <br/>
+   <br/>
+
+2) Email for a new like addition
+   <br/>
+   <br/>
+   <img width="734" alt="emailforlikingcomment" src="https://github.com/JainManjari/Skyinyou/assets/54873596/34675bbe-377d-4da0-b1ab-6781cd95b519">
+   <br/>
+   <br/>
+
+3) Email for a new friend request
+   <br/>
+   <br/>
+   <img width="738" alt="emailfornewfriendrequest" src="https://github.com/JainManjari/Skyinyou/assets/54873596/e0f12282-e0b9-4901-a4b8-2c1d7539600e">
+   <br/>
+   <br/>
+   
+<h3>And much more.....</h3>
+<br/>
+<br/>
+
+
+
+
+
+## Installation
+
+- First download or clone the project
+```
+git clone https://github.com/JainManjari/Skyinyou.git
+```
+
+
+- Install NVM (Ubuntu/WSL in VS Code)
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+- To install Node
+```
+nvm install 18.19.0
+```
+
+- Please download mongo db on your system by this <a href="https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/">Link</a> or you can also use your atlas account.
+
+- To install redis-server for sending out mails.
+
+```
+sudo apt-get update
+sudo apt-get install redis-server
+```
+
+After this command,  you can verify redis-server has been properly installed or not, by running this command:
+
+```
+redis-cli ping
+```
+Expected Output:
+```
+PONG
+```
+- Open the project directory on cmd prompt and install nodemon
+
+```
+npm install -g nodemon
+```
+
+- To install remaining dependencies
+
+```
+npm install
+```
+
+<br>
+
+## To start the project
+
+<br>
+
+
+- Open one terminal
+```
+redis-server
+```
+
+- Open another terminal
+
+1) For running in dev mode:
+```
+npm start
+```
+
+2) Or, for running in production mode:
+```
+npm run prod_start
+```
+3) Open http://localhost:8000 in any browser
+
+
