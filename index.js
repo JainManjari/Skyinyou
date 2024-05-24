@@ -1,5 +1,9 @@
 const express = require('express');
 const env=require('./config/environment');
+
+//// npm run prod_start -> for prod start
+
+console.log("env ", env);
 const logger=require('morgan');
 const cookieParser = require('cookie-parser');
 const app = express();

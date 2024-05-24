@@ -22,10 +22,11 @@ const development={
         service:'gmail',
         host:'smtp.gmail.com',
         port:587,
-        secure:false,
+        secure:true,
+        greetingTimeout : 1000 * 50000,
         auth:{
-            user:'email@gmail.com',
-            pass:'password'
+            user:"manjarijain98@gmail.com",
+            pass:"***************"
         }
     },
     google_client_id:"***********************",
@@ -50,10 +51,11 @@ const production={
         service:'gmail',
         host:'smtp.gmail.com',
         port:587,
-        secure:false,
+        secure:true,
+        greetingTimeout : 1000 * 50000,
         auth:{
-            user:process.env.SKYINYOU_GMAIL_USERNAME,
-            pass:process.env.SKYINYOU_GMAIL_PASSWORD
+            user:process.env.SKYINYOU_GMAIL_USER_2,
+            pass:process.env.SKYINYOU_GMAIL_PASSWORD_2
         }
     },
     google_client_id:process.env.SKYINYOU_GOOGLE_CLIENT_ID,
